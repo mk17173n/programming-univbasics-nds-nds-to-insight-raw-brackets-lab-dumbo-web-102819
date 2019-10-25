@@ -20,12 +20,9 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   
   output = {}
-  
+
   nds.each do |director_hash|
     output[director_hash[:name]] = 0
-  end
-  
-  nds.each do |director_hash|
     director_hash[:movies].each do |movie|
       output[director_hash[:name]] += movie[:worldwide_gross]
     end
