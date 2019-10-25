@@ -19,6 +19,14 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   
-  pp nds
+  output = {}
+  
+  nds.each do |director_hash|
+    
+    output[director_hash[:name]] = 0
+    
+  end
+  
+  output
   
 end
